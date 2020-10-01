@@ -22,14 +22,18 @@ abstract class Animal implements IFood {
     }
 
     public String getName () {
+
         return name;
     }
     public String getType (){
+
         return type;
     }
 
     public double getWeight (){
+
         return weight;
     }
+
 
 }

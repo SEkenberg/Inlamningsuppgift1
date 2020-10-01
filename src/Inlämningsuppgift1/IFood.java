@@ -10,4 +10,20 @@ package Inlämningsuppgift1;
 
 public interface IFood {
     void printMe();
+
+
+    //Skapar ENUM FoodKind som man hittar i Snake, Dog och Cat-klassen
+    enum FoodKind{
+        DOGFOOD(100, "hundfoder"),
+        CATFOOD(150, "kattfoder"),
+        SNAKEFOOD(20, "ormpellets");
+
+        public int foodIndex;
+        public String foodType;
+
+        FoodKind(int fIndex, String fType){
+            foodIndex = fIndex;
+            foodType = fType;
+        }
     }
+}

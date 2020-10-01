@@ -10,17 +10,19 @@ import javax.swing.*;
 public class Cat extends Animal{
 
     public Cat (String name, String type, double weight){
+
         super (name,type,weight);
     }
 
-    public double getfoodWeight(){
-        return (int) getWeight() /150;
+    public double getFoodWeight(){
+
+        return (int) getWeight() / FoodKind.CATFOOD.foodIndex;
     }
 
     @Override
     public void printMe() {
         JOptionPane.showMessageDialog(null, getType() + " " +
-                getName() + " ska ha " + getfoodWeight() + "(g) kattfoder att äta.");
+                getName() + " ska ha " + getFoodWeight() + "(g) " + FoodKind.CATFOOD.foodType + " att äta.");
 
     }
 

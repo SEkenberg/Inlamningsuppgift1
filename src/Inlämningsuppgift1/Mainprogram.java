@@ -10,7 +10,7 @@ import javax.swing.*;
  */
 
 public class Mainprogram {
-    //Skapar ENUM
+    //Skapar ENUM AnimalName
     public enum AnimalName {SIXTEN, DOGGE, VENUS, OVE, HYPNO}
 
     public static void main(String[] args) {

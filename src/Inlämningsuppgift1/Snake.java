@@ -10,16 +10,18 @@ import javax.swing.*;
 public class Snake extends Animal{
 
     public Snake (String name, String type, double weight){
+
         super (name,type, weight);
     }
 
-    public double getfoodWeight() {
-        return 20;
+    public double getFoodWeight() {
+
+        return FoodKind.SNAKEFOOD.foodIndex;
     }
 
     @Override
     public void printMe() {
         JOptionPane.showMessageDialog(null, getType() + " " +
-                getName() + " ska ha " + getfoodWeight() + "(g) ormpellets att äta.");
+                getName() + " ska ha " + getFoodWeight() + "(g) " + FoodKind.SNAKEFOOD.foodType + " att äta.");
     }
 }
